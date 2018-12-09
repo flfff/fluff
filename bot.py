@@ -44,4 +44,4 @@ async def apply(ctx, user:discord.Member):
 
 
 
-bot.run("NDkyMDE0MTQ5NTM5NDYzMTc5.DoQcGg.9zCEf9Y6FOYcdNk3wOxdtu5M2dM")
+bot.run(TOKEN)
