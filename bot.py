@@ -25,7 +25,7 @@ async def on_message(message):
         msgID = message.id
         timestamp = message.timestamp
         
-        await bot.send_message(bot.get_channel('521506621168287764'),'Message sent in {}: {}:`{}`'.format(channel,author,user))
+        #await bot.send_message(bot.get_channel('521506621168287764'),'Message sent in {}: {}:`{}`'.format(channel,author,user))
         await bot.process_commands(message)
 
 @bot.command(pass_context=True)
