@@ -24,11 +24,8 @@ async def on_message(message):
         channel = message.channel
         msgID = message.id
         timestamp = message.timestamp
-
-        #embed = discord.Embed(title="Message sent in {}".format(channel),color=0x66ff66)
-        #embed.add_field(name='{}'.format(author),value='`{}`'.format(msg))
-        #embed.set_footer(text='{}, at {}'.format(msgID,timestamp))
-        #await bot.send_message(bot.get_channel('521459450247249930'),embed=embed)
+        
+        await bot.send_message(bot.get_channel('521459450247249930'),'Message sent in {}: {}:`{}`'.format(channel,author,user))
         await bot.process_commands(message)
 
 @bot.command(pass_context=True)
