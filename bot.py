@@ -45,4 +45,4 @@ async def apply(ctx, user:discord.Member):
 
 
 
-bot.run(process.env.TOKEN)
+bot.run(TOKEN)
